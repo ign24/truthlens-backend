@@ -13,7 +13,7 @@ def create_app() -> FastAPI:
     # Configure CORS
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://localhost:5173"],  # Frontend URL
+        allow_origins=["http://localhost:5173","https://zippy-cobbler-58bcb8.netlify.app/"],  # Frontend URL
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
