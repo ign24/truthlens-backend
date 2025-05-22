@@ -7,10 +7,10 @@ from dotenv import load_dotenv
 from backend.schemas import AnalysisRequest, AnalysisResponse
 from backend.rate_limiter import limiter
 
-# Cargar variables de entorno
+# Load environment variables
 load_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'))
 
-# Inicializar router
+# Router
 router = APIRouter()
 
 ANALYSIS_PROMPT = """You are an expert media analyst. You will receive a short news article and must return only a JSON object with this structure:
