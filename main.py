@@ -22,7 +22,7 @@ def create_app() -> FastAPI:
 
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://localhost:5173", "https://truthlens-ai.netlify.app"],
+        allow_origins=["http://localhost:5173", "https://truthlens-ai.netlify.app", "https://dulcet-pithivier-9d7373.netlify.app"],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
